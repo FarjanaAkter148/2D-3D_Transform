@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 150px;
+            width: 250px;
+            background-color: red;
+            margin: 16px 12px;
+            /* transform: rotate(180deg); */
+            /* transition: translate 3s; */
+            transition: transform 2s;
+            
+           
+        }
+        #box:hover{
+           /* transform: translate(20px, 50px);  */
+           transform: rotate(360deg);
+        }
+        #box1{
+            height: 150px;
+            width: 250px;
+            background-color: yellow;
+            margin: 90px;
+            transition:transform 2s;
+           
+        }
+        #box1:hover{
+            transform: skewX(40deg);
+        }
+
+        #box2{
+            height: 250px;
+            width: 450px;
+            background-color: purple;
+            margin: 90px;
+            transform: rotate(20deg);
+            /*transform-origin: left top;     [left top a mane upore theke top left side theke bindu start kore rotate hobe] */
+            transition: transform 2s;
+        }
+        #box2:hover{
+            transform-origin: left top; 
+        }
+        img{
+            width: 200px;
+            height: 100px;
+        }
+        #box3{
+            height: 150px;
+            width: 250px;
+            background-color: Green;
+          
+            /* X and Y type work */
+           transition: transform 2s;
+        }
+        #box3:hover{
+            transform:translate(60px, 100px);
+
+        }
+        #box4{
+            height: 150px;
+            width: 250px;
+            background-color: blue;
+            margin: 190px;
+           transition: transform 1s;  /*scale(2)means height widht double */
+        }
+        #box4:hover{
+            transform:scale(2);
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Rotate value</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus rerum sequi est obcaecati earum maiores nisi laudantium, dolores distinctio quod nihil culpa accusamus corrupti aliquid, non, aut mollitia delectus soluta eaque minima animi, nemo laborum omnis in alias. Modi, rem voluptas odio laboriosam atque deserunt placeat inventore quo illo vel ab velit.</p>
+    <div id="box1">
+      <h1>SKew value : skew X,Y axis rotate</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus rerum sequi est obcaecati earum maiores nisi laudantium, dolores nemo laborum omnis in alias. Modi, rem voluptas odio laboriosam atque deserunt placeat inventore quo illo vel ab velit.</p>
+    <div id="box2">
+       <p><img src="Capture.PNG" alt=""></p> 
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus rerum sequi est obcaecati earum maiores nisi laudantium, dolores luta eaque minima animi, nemo laborum omnis in alias. Modi, rem voluptas odio laboriosam atque deserunt placeat inventore quo illo vel ab velit.</p>
+    <div id="box3">
+     <h1>translate value work like margin</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus rerum sequi est obcaecati earum maiores nisi laudantium, doloresaborum omnis in alias. Modi, rem voluptas odio laboriosam atque deserunt placeat inventore quo illo vel ab velit.</p>
+    <div id="box4">
+<h1>scale(2), scale height, width double</h1>
+    </div>
+
+</body>
+</html>
